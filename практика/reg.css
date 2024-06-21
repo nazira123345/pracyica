@@ -1,0 +1,67 @@
+body{
+    height: 100vh;
+    background-color: rgba(225, 229, 240, 1);
+}
+.back{
+    color: rgba(102, 119, 171, 1);
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.registration-container {
+    background: rgba(223, 235, 251, 1);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 352px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 0px;
+  margin-top: 40px;
+}
+.registration-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+.img{
+    width: 100px;
+    margin: 10px auto 20px;
+    display: block;
+}
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    background: rgba(102, 119, 171, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.registration-form button:hover{
+    background-color: white;
+    color:rgba(102, 119, 171, 1) ;
+}
+::placeholder{
+    color: rgb(185, 184, 184);
+}
+p{
+    font-size: 10px;
+  color: rgb(149, 148, 148);
+}
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+}

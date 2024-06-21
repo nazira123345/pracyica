@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+body {
+    font-family: "Inter";
+    margin: 0;
+    padding: 0;
+    background-color: rgba(225, 229, 240, 1);
+}
+
+.img_header{
+    width: 60px;
+}
+.btn-header{
+    display: flex;
+    gap: 5px;
+}
+
+.btn1{
+    background-color: rgba(102, 119, 171, 1);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px; 
+    border: none;
+    width: 110px;
+    height: 24px;
+}
+.btn2{
+    background-color: rgba(102, 119, 171, 1);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px; 
+    border: none;
+    width: 155px;
+    height: 24px;
+}
+.btn1:hover{
+    background-color:white ;
+    color: rgba(102, 119, 171, 1);
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color:white ;
+    color: rgba(102, 119, 171, 1);
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    background: rgba(0, 0, 0, 0.42);
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 30px;
+  }
+  .logo {
+    height: 400px;
+    position: relative;
+    right: 50px;
+    opacity: 0.5;
+    filter: contrast(500%);
+  }
+  .text{
+    font-size: 40px;
+    text-align: left;
+    top: 40px;
+    left: 90px;
+  }
+  .button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: rgba(102, 119, 171, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 35px;
+  }
+  .button:hover{
+    background-color: white;
+    color:rgba(102, 119, 171, 1) ;
+}
+.text_1{
+    font-size: 19px; 
+    margin-top: 20px; 
+    color: rgba(51, 51, 51, 1);
+}
+.block_1{
+    margin-top: 30px;
+    background-color:rgba(223, 235, 251, 1) ;
+    display: flex;
+}
+h3{
+    margin-left: 60px;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+}
+.text_block_1{
+    margin-left: 60px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+.left{
+    width: 50%;
+    line-height:1.5;
+}
+.right{
+    margin-top: 90px;
+    margin-left: 70px;
+    max-width: 630px;
+}
+.block_2{
+    margin-top: 30px;
+    background-color:rgba(223, 235, 251, 1) ;
+}
+.gif{
+    display: flex;
+    justify-content: center;
+}
+.git_img {
+    width: 600px;
+}
+.container_teachers{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.teacher {
+    width: calc(25% - 10px); /*Высчитывает 10px, чтобы учесть отступы */
+    margin: 5px;
+    text-align: center;
+}
+.teacher img {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+}
+.teacher-name {
+    margin-top: 5px;
+    font-size: 20px;
+}
+.inform{
+    margin-top: 20px;
+     font-size: 15px;
+    font-family: "Inter", sans-serif ;
+}
+  .svg{
+    width: 20px;
+}
+.social{
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.login-container {
+    padding: 35px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+  .form-group {
+    margin-bottom: 15px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+}
+
+@media (max-width:1150px) {
+    .block_1{
+        flex-direction: column;
+        width: 100%;
+    }
+    .left {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .right {
+        margin: 0 auto;
+    }
+    .banner {
+        padding: 30px 20px;
+    }
+    .text{
+        font-size: 30px;
+    }
+    .text_1{
+        font-size: 12px;
+    }
+    .container_teachers {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    .teacher {
+        width: 100%;
+    }
+    .git_img{
+        width: 100%;
+    }
+}

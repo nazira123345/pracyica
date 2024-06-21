@@ -1,0 +1,63 @@
+
+.slider{
+    max-width: 666px;
+    overflow: hidden; /*скрыть всё содержимое не входящее в ширину*/
+    position: relative;
+    margin: 0 auto;
+    top: 30px;
+}
+.slider_line{
+    display: flex; /*выровнять в ряд*/
+    transition: all 1s; /*для плавного перехода*/
+}
+
+.slider_img{
+    width: 666px;
+    height: 500px;
+}
+
+.slider_btn_prev{
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg); /*для выравнивание по середение и отзеркалить кнопку*/
+    font-size: 20px;
+    color: rgba(102, 119, 171, 1);
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.slider_btn_next{   /*тоже самое и для второй кнопки*/
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%); 
+    font-size: 20px;
+    color: rgba(102, 119, 171, 1);
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.slider_btn_prev:hover, .slider_btn_next:hover{  /*при наведении кнопки меняют цвет заднего фона*/
+    background-color: rgba(0, 0, 0, 0.833);
+}
+
+.marker{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.dot_active{
+    background: rgba(102, 119, 171, 1);
+}

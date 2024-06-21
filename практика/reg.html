@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <a class="back" href="javascript:history.back()"> < Вернуться на главную</a>
+<div class="registration-container">
+    <img class="img" src="img/логотип.png" alt="logo">
+    <h2>РЕГИСТРАЦИЯ</h2>
+    <form id="registrationForm" class="registration-form">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <div id="emailError" class="error">Некорректный email</div>
+        <input type="text" id="username" name="username" placeholder="Имя и фамилия">
+        <div id="usernameError" class="error">Имя и фамилия пользователя должны содержать не менее 2 символов</div>
+        <input type="text" id="phone" name="phone" placeholder="Номер телефона">
+        <div id="phoneError" class="error">Некорректный номер телефона</div>
+        <div id="usernameError" class="error">Имя и фамилия пользователя должны содержать не менее 2 символов</div>
+        <input type="date" id="date" name="date" placeholder="Дата рождения" style="color: rgb(185, 184, 184);">
+        <input type="password" id="password" name="password" placeholder="Пароль">
+        <div id="passwordError" class="error">Пароль должен содержать не менее 6 символов</div>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Подтверждение пароль">
+        <div id="confirmPasswordError" class="error">Пароли не совпадают</div>
+        <p>нажимая на кнопку регистрации, я соглашаюсь с политикой конфиденциальности и обработкой персональных данных</p>
+        <button type="button" onclick="validateForm()">зарегистрироваться</button>
+    </form>
+</div>
+<script src="reg.js"></script>
+
+</body>
+</html>

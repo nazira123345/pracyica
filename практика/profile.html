@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="stoks.css">
+    <link rel="stylesheet" href="null.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="container">
+        <div class="flex_row header_container">
+            <div class="flex_row" style="gap: 20px;">
+                <button type="button" class="btn_burger">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <img class="img_header" src="img/логотип.png" alt="logo">
+            </div>
+            <div class="flex_row header_right">
+                <nav class="menu flex_row none_media">
+                    <a href="#part1">о нас</a>
+                    <a href="#part2">почему мы?</a>
+                    <a href="#part3">наши преподаватели</a>
+                    <a href="#part4">наши контакты</a>
+                    <a href="location.html">акции</a>
+                    </ul>
+                </nav>
+                <div class="btn-header">
+                    <a href="log.html" class="btn1 btn">вход</a>
+                    <a href="reg.html" class="btn2 btn">регистрация</a>                
+                </div>
+            </div>
+        </div>
+    </header>
+    <a class="back" href="javascript:history.back()"> < Вернуться на главную</a>
+
+    <main>
+        <section>
+            <div class="container profile_section">
+                <div class="profile_container flex_column">
+                    <div class="prodile_block_one profile_block flex_row">
+                        <div class="profile_img">
+                            <img src="img/1.jpg" alt="awd">
+                        </div>
+                        <form class="flex_column prodile_block_one_rigth">
+                            <input type="text" class="input_form" value="Иванов Иван" placeholder="Ваше имя">
+                            <input type="text" class="input_form" value="ivan@mail.ru">
+                            <input type="tel" class="input_form" value="8999-999-99-99">
+                            <input type="text" class="input_form" value="01.01.2001">
+                            <button type="submit" class="input_form btn_form" disabled>Сохранить</button>
+                        </form>
+                    </div>
+                    <div class="profile_block">
+                        <h3 class="title_section" style="text-align: left;">Мои курсы</h3>
+
+                        <div class="courses_blocks flex_column">
+                            <div class="course_block flex_row">
+                                <p>Китайский язык</p>
+                                <p>4 600руб.</p>
+                                <p>пн, ср с 16:00-17:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="coopirate">Coopirate Ⓒ 2024 ООО “The Best”</p>
+            <div class="flex_row footer_blocks">
+                <nav class="flex_column footer_nemu">
+                    <a href="">О нас</a>
+                    <a href="">Почему мы?</a>
+                    <a href="">Наши преподаватели</a>
+                    <a href="">Наши контакты</a>
+                    <a href="">Акции</a>
+                </nav>
+                <div class="flex_column roles_footer">
+                    <a href="">правила конфиденциальности</a>
+                    <a href="">согласие на обработку персональных
+                        данных</a>
+                </div>
+                <div class="footer_social flex_row">
+                        <a href="https://vk.com/academy_thebest"><img style="width: 30px;" src="img/вк.svg" alt="vk"></a>
+                        <a href="https://ok.ru/group/academythebest"><img style="width: 30px;" src="img/одноклассники.svg" alt="class"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

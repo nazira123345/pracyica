@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "PT";
+    src: url(fonts/PT/PTSerif-Italic.ttf);
+    font-family: "Inter";
+    src: url(fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+header,
+footer{
+    font-family: "Inter";;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: calc(25px + 7 *(100vw / 1920));
+    font-weight: 400;
+}
+
+h3 {
+    font-size: calc(20px + 5 *(100vw / 1920));
+    font-weight: 400;
+}
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* header */
+
+.header_container {
+    width: 100%;
+    padding: 15px 0;
+    gap: 20px;
+}
+
+.header_right {
+    gap: 20px;
+}
+
+.menu {
+    gap: 20px;
+}
+
+.btn_burger {
+    display: none;
+    font-size: 30px;
+}
+
+.img {
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.header_logo {
+    height: 60px;
+}
+
+.btn {
+    transition: all .3s;
+    text-align: center;
+}
+/*  */
+
+.title_section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px 0 100px 0;
+    background: #DFEBFB;
+}
+
+.footer_blocks {
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.coopirate {
+    color: rgb(96, 96, 96); 
+    font-size: 10px;
+    margin-bottom: 50px;
+}
+
+.footer_nemu {
+    gap: 5px;
+}
+
+.roles_footer {
+    gap: 5px;
+}
+
+.footer_social {
+    gap: 10px;
+}
+
+@media (max-width: 950px) {
+    .none_media {
+        display: none;
+    }
+
+    .btn_burger {
+        display: block;
+        font-size: 25px;
+        padding: 10px;
+        background: #ffffff00;
+        color: black;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer_blocks {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .btn{
+        width: max-content;
+        padding: 0 10px;
+    }
+    .btn-header {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+}
